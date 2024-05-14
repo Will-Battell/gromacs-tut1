@@ -1,8 +1,8 @@
 define                  = -DPOSRES  ; position restrain the protein
 ; Run parameters
 integrator              = md        ; leap-frog integrator
-nsteps                  = 500000    ; 0.002 * 500000 = 1000 ps (1 ns)
-dt                      = 0.002     ; 2 fs
+nsteps                  = 
+dt                      = 
 ; Output control
 nstxout                 = 0         ; suppress bulky .trr file by specifying 
 nstvout                 = 0         ; 0 for output frequency of nstxout,
@@ -29,11 +29,11 @@ pme_order               = 4         ; cubic interpolation
 fourierspacing          = 0.16      ; grid spacing for FFT
 ; Temperature coupling is on
 tcoupl                  = nose-hoover   ; Nose-Hooever thermostat
-tc-grps                 = System        ; two coupling groups - more accurate
+tc-grps                 = System        ; Coupling groups
 tau_t                   = 0.4           ; time constant, in ps
-ref_t                   = 300           ; reference temperature, one for each group, in K
-; Pressure coupling is on
-pcoupl                  = no                    ; Pressure coupling is off
+ref_t                   = 
+; Pressure coupling is off
+pcoupl                  = 
 pcoupltype              = isotropic             ; uniform scaling of box vectors
 tau_p                   = 2.0                   ; time constant, in ps
 ref_p                   = 1.0                   ; reference pressure, in bar
