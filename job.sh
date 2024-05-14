@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-node=128
 #SBATCH --cpus-per-task=1
-#SBATCH --time=04:00:00
+#SBATCH --time=
 
-#SBATCH --account=e793-wbattell
+#SBATCH --account=
 
 #SBATCH --partition=standard
 #SBATCH --qos=standard
